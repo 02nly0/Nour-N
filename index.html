@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; connect-src 'self' https://api.aladhan.com https://api.alquran.cloud https://cdn.islamic.network https://download.islamic.network https://api.hadith.gading.dev; img-src 'self' data:; frame-ancestors 'none'; form-action 'self'; base-uri 'self'">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="Permissions-Policy" content="camera=(), microphone=(), geolocation=(self), interest-cohort=()">
+  <meta name="description" content="نور — موقع إسلامي متكامل: القرآن الكريم مع الصوت، الأحاديث النبوية المصححة، الأذكار، التسبيح، ومواقيت الصلاة">
+  <meta name="theme-color" content="#0a0a0f">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><path d=%22M20 4 C10 4 4 12 4 20 C4 28 10 36 20 36 C26 36 30 33 33 29.5 C28.5 31.5 22.5 31 18 27 C13.5 23 12 17 14.5 12 C16 9 19 7 22 6 C21.5 5 21 4.5 20 4Z%22 fill=%22%23d4a849%22/></svg>" type="image/svg+xml">
+  <title>الرئيسية — نور</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="copy-protected">
+  <div id="pageLoader" class="page-loader">
+    <div class="loader-content">
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+      <p class="loader-tip" id="loaderTip"></p>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="28" height="28"><path d="M20 4 C10 4 4 12 4 20 C4 28 10 36 20 36 C26 36 30 33 33 29.5 C28.5 31.5 22.5 31 18 27 C13.5 23 12 17 14.5 12 C16 9 19 7 22 6 C21.5 5 21 4.5 20 4Z" fill="currentColor"/><circle cx="15" cy="12" r="1.5" fill="#0a0a0f"/></svg></span>
+        <span class="logo-text"><span class="logo-main">نور</span><span class="logo-sub">Noor</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">الرئيسية</a>
+        <a href="quran.html">القرآن</a>
+        <a href="adhkar.html">الأذكار</a>
+        <a href="tasbih.html">التسبيح</a>
+        <a href="dua.html">الأدعية</a>
+        <a href="hadith.html">الأحاديث</a>
+        <button id="themeToggleBtn" class="theme-toggle-btn" title="الوضع الليلي/النهاري"><i class="fa-solid fa-moon"></i></button>
+        <a href="settings.html" title="الإعدادات"><i class="fa-solid fa-sliders"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section class="hero">
+      <div class="hero-bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+      <h1>السلام عليكم ورحمة الله وبركاته<span>مرحبا بكم في نور</span></h1>
+      <p class="hero-date" id="heroDate"></p>
+    </section>
+
+    <div class="cards-grid">
+      <a href="quran.html" class="nav-card">
+        <div class="nav-card-icon accent"><i class="fa-solid fa-quran"></i></div>
+        <h3>القرآن الكريم</h3>
+        <p>اقرأ واستمع للقرآن بأصوات أشهر القراء مع التفسير</p>
+      </a>
+      <a href="hadith.html" class="nav-card">
+        <div class="nav-card-icon accent"><i class="fa-solid fa-scroll"></i></div>
+        <h3>كتب السنة</h3>
+        <p>أحاديث صحيحة من كتب السنة النبوية مع التصنيف</p>
+      </a>
+      <a href="adhkar.html" class="nav-card">
+        <div class="nav-card-icon accent"><i class="fa-solid fa-book-open"></i></div>
+        <h3>الأذكار</h3>
+        <p>أذكار الصباح والمساء والنوم من الكتاب والسنة</p>
+      </a>
+      <a href="tasbih.html" class="nav-card">
+        <div class="nav-card-icon accent"><i class="fa-solid fa-hands-praying"></i></div>
+        <h3>التسبيح</h3>
+        <p>سبح الله بعدد ما شئت من التسبيحات المأثورة</p>
+      </a>
+      <a href="asmaullah.html" class="nav-card">
+        <div class="nav-card-icon accent"><i class="fa-solid fa-star-and-crescent"></i></div>
+        <h3>أسماء الله الحسنى</h3>
+        <p>99 اسما من أسماء الله تعالى مع المعنى والشرح</p>
+      </a>
+      <a href="dua.html" class="nav-card">
+        <div class="nav-card-icon accent"><i class="fa-solid fa-hands-praying"></i></div>
+        <h3>الأدعية</h3>
+        <p>أدعية متنوعة من القرآن والسنة لكل المناسبات</p>
+      </a>
+      <a href="#prayerSection" class="nav-card">
+        <div class="nav-card-icon accent"><i class="fa-solid fa-clock"></i></div>
+        <h3>أوقات الصلاة</h3>
+        <p>مواقيت الصلاة حسب موقعك الحالي بدقة</p>
+      </a>
+      <a href="dates.html" class="nav-card">
+        <div class="nav-card-icon accent"><i class="fa-solid fa-calendar"></i></div>
+        <h3>التقويم الإسلامي</h3>
+        <p>التاريخ الهجري والمناسبات والأيام المهمة للمسلمين</p>
+      </a>
+    </div>
+
+    <section class="prayer-section" id="prayerSection">
+      <div class="prayer-header">
+        <div class="prayer-location">
+          <i class="fa-solid fa-location-dot"></i>
+          <span id="prayerLocationDisplay">جاري تحميل الموقع...</span>
+        </div>
+        <button class="prayer-change-btn" id="prayerChangeBtn">
+          <i class="fa-solid fa-pen"></i> تغيير المدينة
+        </button>
+      </div>
+      <div class="prayer-next">
+        <div class="prayer-next-info">
+          <span class="prayer-next-label">الصلاة القادمة</span>
+          <span class="prayer-next-name" id="nextPrayerName">--</span>
+          <span class="prayer-next-time" id="nextPrayerTimeDisplay">--:--</span>
+        </div>
+        <div class="prayer-countdown">
+          <div class="countdown-label">متبقي</div>
+          <span class="countdown-value" id="countdownDisplay">00:00:00</span>
+        </div>
+      </div>
+      <div class="prayer-times-grid" id="prayerTimesGrid"></div>
+      <div class="prayer-date-row">
+        <span id="prayerHijri">--</span>
+        <span>|</span>
+        <span id="prayerGreg">--</span>
+      </div>
+    </section>
+
+    <!-- Daily Verse -->
+    <div style="margin-top:32px;padding:20px;border-radius:var(--radius);border:1px solid var(--border);background:var(--surface);text-align:center;">
+      <div style="font-family:var(--font-arabic);font-size:clamp(20px,3vw,28px);line-height:2;color:var(--accent);margin-bottom:8px;" id="verseArabic"></div>
+      <div style="font-size:13px;color:var(--text-secondary);line-height:1.7;" id="verseTranslation"></div>
+      <div style="font-size:11px;color:var(--text-tertiary);margin-top:6px;" id="verseReference"></div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-decoration">﷽</div>
+    <a href="donate.html" class="footer-donate"><i class="fa-solid fa-heart"></i> ساهم في دعم نور</a>
+    <div class="footer-social">
+      <a href="#" class="social-link" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" class="social-link" aria-label="تيليغرام"><i class="fa-brands fa-telegram"></i></a>
+      <a href="#" class="social-link" aria-label="يوتيوب"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">عن نور</a>
+      <a href="privacy.html">سياسة الخصوصية</a>
+      <a href="terms.html">الشروط والأحكام</a>
+      <a href="report.html">الإبلاغ عن خطأ</a>
+      <a href="reports.html">لوحة التحكم</a>
+    </div>
+    <p>جعل الله هذا العمل خالصًا لوجهه الكريم</p>
+    <p>&copy; 1447 هـ — جميع الحقوق محفوظة لـ نور</p>
+  </footer>
+
+  <!-- Quick Access -->
+  <div class="quick-access-panel">
+    <button class="quick-access-toggle" id="quickAccessToggle" title="الوصول السريع"><i class="fa-solid fa-bolt"></i></button>
+    <div class="quick-access-items" id="quickAccessItems"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
